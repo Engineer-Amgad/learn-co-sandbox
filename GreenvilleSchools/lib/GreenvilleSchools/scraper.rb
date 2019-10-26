@@ -1,5 +1,5 @@
 require 'open-uri'
-#require 'pry'
+require 'pry'
 class GreenvilleSchools::Scraper
   
   attr_accessor :name, 
@@ -22,12 +22,10 @@ class GreenvilleSchools::Scraper
                 :address => address,
                 :school_url => school_url, :scale => scale}
       schools_array << school_info
-      puts schools_array
-      puts self.name
       end
     schools_array
-    #binding.pry
-    puts schools_array
+    binding.pry
+
     puts "I am here"
   end
   

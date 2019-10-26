@@ -1,3 +1,4 @@
+require 'pry'
 class GreenvilleSchools::CLI 
   binding.pry
   def call 
